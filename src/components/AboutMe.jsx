@@ -2,46 +2,112 @@ import Title from "./shared/Title";
 
 const AboutMe = () => {
   return (
-    <div>
+    <div className="bg-[#262728] text-white py-12 px-2 md:px-20 lg:px-32">
       <Title title="About Me" subTitle="" />
 
-     <div className="card p-6">
-     <section className="about-me">
-        <p>
-          Hello! I'm Nahid Hasan, a passionate web developer with a keen interest in building innovative and user-friendly web applications. I have always been fascinated by the intersection of technology and creativity, which led me to pursue a career in programming. Whether it's creating a responsive layout, developing smooth animations, or optimizing user experience, I strive to make every project both functional and visually appealing.
-        </p>
-      </section>
+      <div className="card p-6 space-y-12">
+        {/* Introduction Section */}
+        <section className="about-me">
+          <p className="text-lg leading-relaxed">
+            Hello! I'm{" "}
+            <span className="text-[#8C49E9] font-bold">Nahid Hasan</span>, a
+            passionate web developer with a deep love for creating innovative
+            and user-friendly web applications. My fascination with the
+            intersection of <span className="text-[#8C49E9]">technology</span>{" "}
+            and <span className="text-[#8C49E9]">creativity</span> led me to
+            pursue a career in programming. I take pride in building responsive
+            layouts, crafting smooth animations, and optimizing user experiences
+            to make every project not only functional but also visually
+            captivating.
+          </p>
+        </section>
 
-      <section className="my-skills mt-8  shadow-xl p-10 rounded-xl transform transition-transform duration-300 hover:scale-105">
-        <h2 className="text-3xl font-bold mb-4">My Skills</h2>
-        <p>Over the years, I have gained experience in a variety of web development technologies:</p>
-        <ul className="list-disc pl-5">
-          <li><strong>Front-end</strong>: HTML, CSS, JavaScript, React, TailwindCSS, DaisyUI</li>
-          <li><strong>Back-end</strong>: Node.js, Express.js, MongoDB</li>
-          <li><strong>Tools & Frameworks</strong>: Firebase, React Router, AOS, Swiper, Git, and more</li>
-          <li><strong>Version Control</strong>: Git, GitHub</li>
-          <li><strong>UI/UX</strong>: Responsive design, accessibility, user-centered design principles</li>
-        </ul>
-        <p className="mt-4">
-          I’m always eager to learn new technologies and improve my skills to create better, more efficient applications. I enjoy staying up to date with the latest trends in web development.
-        </p>
-      </section>
+      
 
-      <section className="my-journey mt-8  shadow-xl p-10 rounded-xl transform transition-transform duration-300 hover:scale-105">
-        <h2 className="text-3xl font-bold mb-4">My Development Journey</h2>
-        <p>
-          I began my journey in programming with a deep curiosity about how websites and applications work behind the scenes. Initially, I started with HTML and CSS, learning how to structure and style static websites. As I delved deeper, I became intrigued by JavaScript and its ability to add interactivity to websites. This sparked my interest in front-end development, and I soon started working with React to build dynamic and responsive web applications. 
-          As I progressed, I realized the importance of back-end development to make web apps more powerful and scalable. I began learning Node.js and Express.js, and my experience with MongoDB helped me understand how to manage data for my applications. Today, I combine front-end and back-end skills to create full-stack solutions that cater to a variety of user needs.
-        </p>
-      </section>
+        {/* Development Journey Section */}
+        {/* <section className="my-journey shadow-xl p-10 rounded-xl bg-[#262728] border border-[#8C49E9] transform transition-transform duration-300 hover:scale-105">
+          <h2 className="text-3xl font-bold mb-4 text-[#8C49E9]">
+            My Development Journey
+          </h2>
+          <p className="leading-relaxed">
+            My journey began with curiosity about how websites and applications
+            work behind the scenes. Starting with HTML and CSS, I learned how to
+            structure and style websites. Discovering JavaScript introduced me
+            to interactivity, and React opened the door to building dynamic,
+            responsive web apps. <br />
+            <br />
+            To make web apps more powerful, I ventured into back-end development
+            with Node.js and Express.js. Along with MongoDB, I now build
+            full-stack applications that solve real-world problems and deliver
+            seamless user experiences.
+          </p>
+        </section> */}
+        <section className="why-programming shadow-xl  p-10 rounded-xl bg-gray-800 border border-[#8C49E9] transform transition-transform duration-300 hover:scale-105">
+          <h2 className="text-3xl font-bold mb-4 text-[#8C49E9]">
+            My Journey in Web Development
+          </h2>
+          <p className="leading-relaxed">
+            My journey into web development began with a curiosity about how
+            websites and apps work. It started as a hobby—learning the basics of
+            HTML and CSS in my free time. But as I dove deeper into JavaScript,
+            React, and other technologies, I realized the potential to create
+            truly dynamic and interactive web applications. The challenges I
+            encountered pushed me to constantly learn and grow.
+            <br />
+            <br />
+            Over time, I've developed a strong foundation in front-end
+            development, and I've tackled real-world projects, from e-commerce
+            platforms to full-stack applications. My proudest achievements so
+            far include building a fully functional Movie Portal web app,
+            completing a user management project with MongoDB and Firebase, and
+            continuously refining my skills in modern web development tools like
+            Tailwind CSS, React, and Framer Motion.
+            <br />
+            <br />
+            Each project, challenge, and milestone has fueled my passion for
+            programming, and I'm excited to continue learning and creating
+            solutions that can make an impact. For me, web development isn't
+            just about writing code—it's about building experiences that inspire
+            and solve problems.
+          </p>
+        </section>
 
-      <section className="why-programming mt-8  shadow-xl p-10 rounded-xl transform transition-transform duration-300 hover:scale-105">
-        <h2 className="text-3xl font-bold mb-4">Why I Am in Programming</h2>
-        <p>
-          My journey into programming wasn't a linear one, but it was a calling I couldn’t ignore. The ability to solve problems, create something from scratch, and continually evolve with new technologies is what keeps me motivated. Programming gives me a sense of fulfillment, as I can see my ideas come to life in the form of functional, interactive web apps. I love the challenge that comes with coding, the constant learning process, and the opportunity to create tools that make people's lives easier. The power of programming is limitless, and I'm excited to continue my journey, contribute to meaningful projects, and keep learning every step of the way.
-        </p>
-      </section>
-     </div>
+        {/* Why Programming Section */}
+        <section className="why-programming shadow-xl p-10 rounded-xl bg-gray-800 border border-[#8C49E9] transform transition-transform duration-300 hover:scale-105">
+          <h2 className="text-3xl font-bold mb-4 text-[#8C49E9]">
+            Why I Am in Programming
+          </h2>
+          <p className="leading-relaxed">
+            Programming allows me to turn ideas into reality. The ability to
+            solve problems, create tools that improve lives, and continuously
+            learn and adapt keeps me motivated. I thrive on the challenges
+            coding presents and the satisfaction of creating interactive,
+            functional web apps from scratch. <br />
+            <br />
+            For me, programming is more than a career—it's a way to explore my
+            creativity and make a meaningful impact through technology.
+          </p>
+        </section>
+
+        {/* What Drives Me */}
+        <section className="what-drives shadow-xl p-10 rounded-xl bg-gray-800 border border-[#8C49E9] transform transition-transform duration-300 hover:scale-105">
+          <h2 className="text-3xl font-bold mb-4 text-[#8C49E9]">
+            What Drives Me
+          </h2>
+          <p className="leading-relaxed">
+            I'm driven by the thrill of turning ideas into reality through code.
+            Problem-solving is my passion—breaking down complex challenges and
+            crafting elegant solutions that work seamlessly. The rapid pace of
+            technology excites me, pushing me to continually learn and evolve.
+            <br />
+            <br />
+            Building web applications that deliver real value to users is what
+            fuels my creativity. Each line of code is a step toward creating
+            something meaningful, and the impact of delivering a flawless,
+            user-centered experience is what keeps me motivated.
+          </p>
+        </section>
+      </div>
     </div>
   );
 };

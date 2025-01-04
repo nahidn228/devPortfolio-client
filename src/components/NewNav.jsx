@@ -31,7 +31,7 @@ const NewNav = () => {
       </li>
       <li className="relative group">
         <NavLink
-          to="/about-me"
+          to="/about"
           className={({ isActive }) =>
             isActive
               ? "bg-[#8C49E9] p-2 font-bold transition duration-300"

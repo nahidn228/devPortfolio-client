@@ -149,7 +149,8 @@ const NewNav = () => {
             {navLinks}
           </ul>
         </div>
-        <div className="flex items-center space-x-1 btn btn-ghost">
+        {/* Large device Logo */}
+        <div className="md:flex items-center space-x-1 btn btn-ghost hidden ">
           {/* Icon */}
           <div className="flex items-center justify-center w-10 h-10 bg-[#8C49E9] text-white rounded-full shadow-lg">
             <FaCode size={24} />
@@ -159,6 +160,18 @@ const NewNav = () => {
             <span className="text-white">Nahid</span>Hasan
           </h1>
         </div>
+
+        {/* small device logo */}
+        <div className="flex md:hidden items-center space-x-3">
+      {/* Icon */}
+      <div className="flex  items-center justify-center w-10 h-10 bg-[#8C49E9] text-white rounded-full shadow-lg">
+        <FaCode size={24} />
+      </div>
+      {/* Text */}
+      <h1 className="text-2xl font-bold text-[#8C49E9]">
+        <span className="text-white">N</span>H
+      </h1>
+    </div>
        
       </div>
       <div className="navbar-center hidden lg:flex">

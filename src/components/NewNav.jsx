@@ -9,6 +9,7 @@ import {
 import { TfiEmail } from "react-icons/tfi";
 import { NavLink } from "react-router-dom";
 
+
 const NewNav = () => {
   const navLinks = (
     <>
@@ -31,8 +32,9 @@ const NewNav = () => {
         </span>
       </li>
       <li className="relative group">
-        <NavLink
-          to="/about"
+        <a
+          to=""
+          href='#about'
           className={({ isActive }) =>
             isActive
               ? "bg-[#8C49E9] p-2 font-bold transition duration-300"
@@ -41,7 +43,7 @@ const NewNav = () => {
         >
           <FaUser />
           <span className="lg:hidden"> About Me</span>
-        </NavLink>
+        </a>
 
         {/* Tooltip */}
         <span className="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-max px-3 py-1 text-sm text-white bg-[#262728] rounded-md opacity-0 group-hover:opacity-100 transition duration-300 ">
@@ -49,8 +51,9 @@ const NewNav = () => {
         </span>
       </li>
       <li className="relative group">
-        <NavLink
-          to="/my-skill"
+        <a
+          to=""
+          href='#skill'
           className={({ isActive }) =>
             isActive
               ? "bg-[#8C49E9] p-2 font-bold transition duration-300"
@@ -59,7 +62,7 @@ const NewNav = () => {
         >
           <FaCogs />
           <span className="lg:hidden">Skills</span>
-        </NavLink>
+        </a>
 
         {/* Tooltip */}
         <span className="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-max px-3 py-1 text-sm text-white bg-[#262728] rounded-md opacity-0 group-hover:opacity-100 transition duration-300 ">
@@ -67,8 +70,9 @@ const NewNav = () => {
         </span>
       </li>
       <li className="relative group">
-        <NavLink
-          to="/education"
+        <a
+          href="#education"
+
           className={({ isActive }) =>
             isActive
               ? "bg-[#8C49E9] p-2 font-bold transition duration-300"
@@ -77,7 +81,7 @@ const NewNav = () => {
         >
           <FaGraduationCap />
           <span className="lg:hidden">Education</span>
-        </NavLink>
+        </a>
 
         {/* Tooltip */}
         <span className="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-max px-3 py-1 text-sm text-white bg-[#262728] rounded-md opacity-0 group-hover:opacity-100 transition duration-300 ">
@@ -85,8 +89,8 @@ const NewNav = () => {
         </span>
       </li>
       <li className="relative group">
-        <NavLink
-          to="/projects"
+        <a
+          href="#project"
           className={({ isActive }) =>
             isActive
               ? "bg-[#8C49E9] p-2 font-bold transition duration-300"
@@ -95,7 +99,7 @@ const NewNav = () => {
         >
           <FaFolderOpen />
           <span className="lg:hidden">Projects</span>
-        </NavLink>
+        </a>
 
         {/* Tooltip */}
         <span className="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-max px-3 py-1 text-sm text-white bg-[#262728] rounded-md opacity-0 group-hover:opacity-100 transition duration-300 ">
@@ -103,8 +107,8 @@ const NewNav = () => {
         </span>
       </li>
       <li className="relative group">
-        <NavLink
-          to="/projects"
+        <a
+          href="#contact"
           className={({ isActive }) =>
             isActive
               ? "bg-[#8C49E9] p-2 font-bold transition duration-300"
@@ -112,7 +116,7 @@ const NewNav = () => {
           }
         >
           <TfiEmail /> <span className="lg:hidden">Contact</span>
-        </NavLink>
+        </a>
 
         {/* Tooltip */}
         <span className="absolute left-1/2 -translate-x-1/2 top-full mt-2 w-max px-3 py-1 text-sm text-white bg-[#262728] rounded-md opacity-0 group-hover:opacity-100 transition duration-300 ">

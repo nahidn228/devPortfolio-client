@@ -5,7 +5,7 @@ import Title from "./shared/Title";
 
 const Contact = () => {
   return (
-    <div className="bg-[#262728] px-10">
+    <div id="contact" className="bg-[#262728] px-10">
       <section className="py-10 px-5 bg-[#262728]">
         <Title title={" Contact Me"} />
 

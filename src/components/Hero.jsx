@@ -2,7 +2,10 @@ import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <div className="hero text-white min-h-screen bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900">
+    <div
+      id="hero"
+      className="hero text-white min-h-screen bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900"
+    >
       <div className="hero-content flex-col lg:flex-row-reverse items-center gap-12 md:px-20 py-10">
         {/* Profile Image */}
         <div className="relative">

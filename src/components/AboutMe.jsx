@@ -2,7 +2,7 @@ import Title from "./shared/Title";
 
 const AboutMe = () => {
   return (
-    <div className="bg-[#262728] text-white py-12 px-2 md:px-20 lg:px-32">
+    <div id='about' className="bg-[#262728] text-white py-12 px-2 md:px-20 lg:px-32">
       <Title title="About Me" subTitle="" />
 
       <div className="card p-6 space-y-12">

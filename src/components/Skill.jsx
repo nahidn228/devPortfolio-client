@@ -32,7 +32,7 @@ const Skill = () => {
     { name: "Bootstrap", icon: <SiBootstrap />, percentage: 80 },
   ];
   return (
-    <div className="bg-gray-800 text-white py-12 px-2 md:px-20 lg:px-32">
+    <div id='skill' className="bg-gray-800 text-white py-12 px-2 md:px-20 lg:px-32">
       <Title title="My Skills" subTitle="" />
 
       <div className="card p-6 space-y-12">

@@ -1,17 +1,90 @@
 [
-    {
-      "title": "Project 1",
-      "description": "A brief description of the project goes here. Showcase the purpose, features, and technology stack used. Highlight what makes this project stand out.",
-      "liveDemo": "#",
-      "githubRepo": "#",
-      "image": "/PaddyPet.jpg"
-    },
-    {
-      "title": "Project 2",
-      "description": "Another project description with unique features and a different technology stack.",
-      "liveDemo": "https://example.com/demo2",
-      "githubRepo": "https://github.com/example/project2",
-      "image": "/Project2.jpg"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "project_name": "Eco Adventure",
+    "project_image": "https://i.ibb.co.com/fHWSKz2/Eco-Adventure.jpg",
+    "project_url": "https://fusiondeck-228.web.app/",
+    "github_url": "https://github.com/nahidn228/fusion-deck",
+    "description": "Eco Adventure is a powerful, user-friendly deck-building web app for card enthusiasts. It allows users to create, manage, and showcase their card collections easily, with a smooth and interactive interface.",
+    "features": [
+      "Create and manage card decks",
+      "Search for cards based on criteria",
+      "View and share card collections",
+      "User-friendly interface",
+      "Mobile responsive design"
+    ],
+    "technologies_used": ["React", "Firebase", "CSS", "JavaScript"],
+    "challenges": [
+      "Handling dynamic data fetching and state management",
+      "Ensuring smooth interaction between UI and database",
+      "Optimizing app performance for large data sets"
+    ],
+    "project_goal": "To create a seamless and efficient platform for managing card decks with a focus on user experience and performance."
+  },
+  {
+    "id": 2,
+    "project_name": "Hero Travel",
+    "project_image": "https://i.ibb.co.com/dryZG92/Hero-Travel.jpg",
+    "project_url": "https://nahidn228.github.io/Hero-travel/",
+    "github_url": "https://github.com/nahidn228/Hero-travel",
+    "description": "Hero Travel is a travel exploration platform that allows users to browse popular travel destinations, plan trips, and gather detailed information about various locations. It’s designed with an intuitive interface to make travel planning easier and more enjoyable.",
+    "features": [
+      "Browse popular destinations",
+      "Detailed destination information",
+      "User-friendly interface",
+      "Mobile responsive design",
+      "Easy navigation between pages"
+    ],
+    "technologies_used": ["HTML", "CSS", "JavaScript", "React"],
+    "challenges": [
+      "Designing a smooth user experience for exploring destinations",
+      "Implementing responsive design for mobile and desktop",
+      "Ensuring seamless navigation between different sections"
+    ],
+    "project_goal": "To create an engaging travel exploration website that inspires users to discover new places and helps them plan their next adventure with ease."
+  },
+  {
+    "id": 3,
+    "project_name": "Fitness App",
+    "project_image": "https://i.ibb.co.com/pQZGtpS/Fitness.jpg",
+    "project_url": "https://nahidn228.github.io/Fitness/",
+    "github_url": "https://github.com/nahidn228/Fitness",
+    "description": "Fitness App is a web application designed to help users track their fitness goals, progress, and routines. It includes a variety of tools and features aimed at enhancing the user's workout experience and helping them stay motivated.",
+    "features": [
+      "Track workouts and fitness progress",
+      "Customizable workout routines",
+      "User-friendly interface",
+      "Real-time progress tracking",
+      "Mobile responsive design"
+    ],
+    "technologies_used": ["HTML", "CSS", "JavaScript", "React"],
+    "challenges": [
+      "Ensuring data accuracy for tracking fitness progress",
+      "Designing an intuitive workout tracking system",
+      "Ensuring mobile responsiveness"
+    ],
+    "project_goal": "To create a comprehensive fitness tracking app that helps users stay motivated, track their progress, and manage their workout routines effectively."
+  },
+  {
+    "id": 4,
+    "project_name": "Barn House",
+    "project_image": "https://i.ibb.co.com/KrLZP3X/Rinterio.jpg",
+    "project_url": "https://nahidn228.github.io/barn-house/",
+    "github_url": "https://github.com/nahidn228/barn-house",
+    "description": "Barn House is a beautifully designed website showcasing rustic and cozy barn-style homes. The site features a clean design, showcasing various properties and their features, making it a perfect site for people interested in unique and charming homes.",
+    "features": [
+      "Browse through various barn house designs",
+      "Detailed property features and images",
+      "User-friendly interface",
+      "Mobile responsive design",
+      "Information about barn house styles"
+    ],
+    "technologies_used": ["HTML", "CSS", "JavaScript", "React"],
+    "challenges": [
+      "Designing the layout to emphasize property images",
+      "Ensuring responsive design across devices",
+      "Creating an intuitive navigation experience for users"
+    ],
+    "project_goal": "To create a visually appealing and informative website that showcases barn-style homes, providing potential homeowners with design ideas and inspirations."
+  }
+]

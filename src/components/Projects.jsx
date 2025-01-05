@@ -2,19 +2,29 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import ProjectCard from "./shared/ProjectCard";
 
 // Import Swiper styles
+import { useEffect, useState } from "react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Autoplay, Navigation } from "swiper/modules";
 
 const Projects = () => {
+  const [projects, setProjects] = useState([]);
+  useEffect(() => {
+    fetch("projects.json")
+      .then((res) => res.json())
+      .then((data) => setProjects(data));
+  }, []);
+
+  console.log(projects);
+
   return (
-    <div className="bg-gray-800 pt-10">
+    <div id="project" className="bg-gray-800 pt-10">
       <section className="pb-0 px-5">
         <h2 className="text-3xl font-bold text-center mb-6 text-white">
           Projects
         </h2>
-        <div className="w-11/12 md:w-10/12 mx-auto h-[80vh]">
+        <div className="w-11/12 md:w-10/12 mx-auto pb-10">
           {" "}
           {/* Ensure height */}
           <Swiper
@@ -27,14 +37,12 @@ const Projects = () => {
             }}
             speed={1000}
             navigation={true} // Adds navigation arrows
-            modules={[ Navigation, Autoplay]}
-            className="mySwiper mt-10"
+            modules={[Navigation, Autoplay]}
+            className="mySwiper mt-10 "
           >
-            {[...Array(6)].map((_, i) => (
-              <SwiperSlide key={i}>
-                <div className="m-8 my-10">
-                  <ProjectCard />
-                </div>
+            {projects.map((project) => (
+              <SwiperSlide key={project.id}>
+                <ProjectCard project={project} />
               </SwiperSlide>
             ))}
           </Swiper>

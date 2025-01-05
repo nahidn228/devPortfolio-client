@@ -1,0 +1,17 @@
+[
+    {
+      "title": "Project 1",
+      "description": "A brief description of the project goes here. Showcase the purpose, features, and technology stack used. Highlight what makes this project stand out.",
+      "liveDemo": "#",
+      "githubRepo": "#",
+      "image": "/PaddyPet.jpg"
+    },
+    {
+      "title": "Project 2",
+      "description": "Another project description with unique features and a different technology stack.",
+      "liveDemo": "https://example.com/demo2",
+      "githubRepo": "https://github.com/example/project2",
+      "image": "/Project2.jpg"
+    }
+  ]
+  

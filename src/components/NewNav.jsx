@@ -1,4 +1,5 @@
 import {
+  FaCode,
   FaCogs,
   FaFolderOpen,
   FaGraduationCap,
@@ -122,7 +123,7 @@ const NewNav = () => {
   );
 
   return (
-    <div className="navbar bg-[#111213] text-white shadow-lg fixed max-w-screen-xl mx-auto z-10">
+    <div className="navbar bg-[#131415] text-white shadow-lg fixed max-w-screen-xl mx-auto z-10">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -148,11 +149,17 @@ const NewNav = () => {
             {navLinks}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl font-bold ">
-          {" "}
-          <img className="w-14 hidden lg:flex" src="/NahidHasan.png" alt="" />
-          Nahid <span className="text-[#8C49E9]">Hasan</span>
-        </a>
+        <div className="flex items-center space-x-1 btn btn-ghost">
+          {/* Icon */}
+          <div className="flex items-center justify-center w-10 h-10 bg-[#8C49E9] text-white rounded-full shadow-lg">
+            <FaCode size={24} />
+          </div>
+          {/* Text */}
+          <h1 className="text-2xl font-bold text-[#8C49E9]">
+            <span className="text-white">Nahid</span>Hasan
+          </h1>
+        </div>
+       
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal bg-[#262728] rounded-lg text-xl px-2 space-x-2">

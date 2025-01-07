@@ -1,5 +1,6 @@
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
+import { toast } from "react-hot-toast";
 import { BsWhatsapp } from "react-icons/bs";
 import { FaMapLocation, FaPhoneFlip } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
@@ -10,6 +11,7 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+   
 
     emailjs
       .sendForm("service_qhagd56", "template_ixjefxm", form.current, {
@@ -19,6 +21,7 @@ const Contact = () => {
         () => {
           console.log("SUCCESS!");
           e.target.reset();
+          toast.success(`Thank you for reaching out to me.`);
         },
         (error) => {
           console.log("FAILED...", error.text);

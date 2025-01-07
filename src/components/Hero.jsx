@@ -11,22 +11,20 @@ const Hero = () => {
         <div className="relative">
           <div className="absolute inset-0 bg-gradient-to-r from-[#8C49E9] to-[#6F3BD4] rounded-full blur-lg scale-110"></div>
           <img
-            src="/profile-pic.png"
-            className="w-56 h-56 lg:w-80 lg:h-80 rounded-full shadow-2xl border-4 border-[#8C49E9] object-cover relative"
+            src="/NahidHero.png"
+            className="w-full h-80 lg:w-96 lg:h-96 rounded-full shadow-2xl border-4 border-[#8C49E9] object-cover relative"
             alt="Nahid Hasan"
           />
         </div>
 
         {/* Hero Content */}
         <div className="text-center lg:text-left">
-          <h2 className="text-5xl font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-[#8C49E9] to-[#6F3BD4] animate-pulse">
-            Hi, I'm Nahid Hasan
+          <h2 className="text-2xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-[#8C49E9] to-[#6F3BD4] animate-pulse">
+            I'm <span className="text-6xl font-bold">Nahid Hasan</span>
           </h2>
           <p className="text-lg text-gray-300 mb-6 leading-relaxed">
             A passionate{" "}
-            <span className="text-[#8C49E9] font-semibold">
-              Frontend Developer
-            </span>{" "}
+            <span className="text-[#8C49E9] font-semibold">MERN Developer</span>{" "}
             crafting beautiful and seamless web experiences with modern
             technologies.
           </p>

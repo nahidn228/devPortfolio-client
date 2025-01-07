@@ -1,30 +1,59 @@
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
 import { BsWhatsapp } from "react-icons/bs";
 import { FaMapLocation, FaPhoneFlip } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import Title from "./shared/Title";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_qhagd56", "template_ixjefxm", form.current, {
+        publicKey: "TaidNrDtbWZlrfLKl",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+          e.target.reset();
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
+
   return (
     <div id="contact" className="bg-[#262728] px-10">
-      <section className="py-10 px-5 bg-[#262728]">
+      <section className="py-10 md:px-5 bg-[#262728]">
         <Title title={" Contact Me"} />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-4 md:p-6">
           {/* Contact Form Section */}
           <div className="border-2 border-slate-200 p-6 rounded-2xl bg-gray-800 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-            <form className="max-w-lg mx-auto space-y-4">
+            <form
+              ref={form}
+              onSubmit={sendEmail}
+              className="max-w-lg mx-auto space-y-4"
+            >
               <input
                 type="text"
                 placeholder="Your Name"
+                name="user_name"
                 className="w-full p-3 bg-gray-900 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-[#8C49E9] focus:ring-opacity-50"
               />
               <input
                 type="email"
                 placeholder="Your Email"
+                name="user_email"
                 className="w-full p-3 bg-gray-900 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-[#8C49E9] focus:ring-opacity-50"
               />
               <textarea
                 placeholder="Your Message"
+                name="message"
                 rows="5"
                 className="w-full p-3 bg-gray-900 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-[#8C49E9] focus:ring-opacity-50"
               ></textarea>

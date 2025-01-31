@@ -185,7 +185,7 @@ const NewNav = () => {
       </div>
       <div className="navbar-end">
         <a
-          href="/Nahid_Hasan.pdf"
+          href="/Resume_of_Nahid_Hasan.pdf"
           className="btn btn-outline bg-[#262728] btn-sm md:btn-md  text-white font-bold hover:bg-[#8C49E9] transition duration-300"
           download
         >

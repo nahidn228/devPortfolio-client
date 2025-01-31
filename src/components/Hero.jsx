@@ -12,7 +12,7 @@ const Hero = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-[#8C49E9] to-[#6F3BD4] rounded-full blur-lg scale-110"></div>
           <img
             src="/NahidHero.png"
-            className="w-full h-80 lg:w-96 lg:h-96 rounded-full shadow-2xl border-4 border-[#8C49E9] object-cover relative"
+            className="w-full h-full lg:w-96 lg:h-96 rounded-full shadow-2xl border-4 border-[#8C49E9] object-cover relative"
             alt="Nahid Hasan"
           />
         </div>

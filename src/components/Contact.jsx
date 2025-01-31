@@ -86,11 +86,11 @@ const Contact = () => {
             </p>
             <p className="text-lg flex items-center gap-2 text-[#8C49E9]">
               <FaPhoneFlip />{" "}
-              <span className="font-semibold text-white">+8801765421852</span>
+              <span className="font-semibold text-white">+8801798324439</span>
             </p>
             <p className="text-lg flex items-center gap-2 text-[#8C49E9]">
               <BsWhatsapp />
-              <span className="font-semibold text-white">+8801765421852</span>
+              <span className="font-semibold text-white">+8801798324439</span>
             </p>
           </div>
         </div>

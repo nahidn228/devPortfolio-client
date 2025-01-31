@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import AboutMe from "../components/AboutMe";
 import Contact from "../components/Contact";
+import EduCard from "../components/EduCard";
 import Education from "../components/Education";
 import Hero from "../components/Hero";
 import Projects from "../components/Projects";
@@ -66,6 +67,19 @@ const Home = () => {
       >
         <Projects />
       </motion.div>
+      {/* EduCard */}
+      {/* <motion.div
+        className="p-10"
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 1.2,
+          ease: "easeInOut",
+        }}
+        viewport={{ once: true }}
+      >
+        <EduCard />
+      </motion.div> */}
 
       {/* Contact Section with scale and fade-in */}
       <motion.div
